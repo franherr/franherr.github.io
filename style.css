@@ -1,0 +1,138 @@
+/*colors;
+	ffacdb -- darker pink 
+	838383 -- medium gray */
+
+body {
+	background: #ffdff1; /*pink*/
+	text-align: left;
+}
+
+#main {
+	width: 1000px;
+	height: auto;
+	background: #dbdbdb; /* Light Gray*/
+	margin: 25px auto;
+	border: solid 4px #474747; /* Dark Gray*/
+	padding: 10px;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Georgia";
+	font: 24pt;
+	color: #474747; /* Dark Gray*/
+}
+
+h2 {
+	text-align: center;
+	font-family: "Arial";
+	font: 20pt;
+	color: #474747;
+}
+
+hr {
+	height: 4px;
+	color: #474747; /* Dark Gray*/
+}
+
+p {
+	font-family: "Calibri";
+	font-size: 12pt;
+	text-align: left;
+	text-indent: 48px;
+	margin: 10px 30px 10px 30px;
+}
+
+p.large {
+	font-size: 16pt;
+	margin: 10px 60px 10px 60px;
+}
+
+p.emph {
+	font-style: italic;
+	font-size: 14pt
+}
+
+p.disp {
+	font-family: "Georgia";
+	font-style: italic;
+	font-size: 14pt;
+	text-align: center;
+	line-height: 150%;
+}
+
+#imageDis {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+#imageDis img {
+  vertical-align: middle;
+}
+
+.centering {
+	text-align: center;
+}
+
+.DirBtnBig {
+	background-color:#dbdbdb;
+	border-radius:21px;
+	border:3px solid #474747;
+	display:inline-block;
+	cursor:pointer;
+	color:#474747;
+	font-family:Arial;
+	font-size:22px;
+	padding:11px 32px;
+	text-decoration:none;
+}
+.DirBtnBig:hover {
+	background-color: #ffdff1;
+}
+.DirBtnBig:active {
+	position:relative;
+	top:1px;
+}
+
+.DirBtnSmall {
+	background-color:#dbdbdb;
+	border-radius:21px;
+	border:2px solid #474747;
+	display:inline-block;
+	cursor:pointer;
+	color:#474747;
+	font-family:Arial;
+	font-size:16px;
+	padding:7px 20px;
+	text-decoration:none;
+}
+.DirBtnSmall:hover {
+	background-color:#ffdff1;
+}
+.DirBtnSmall:active {
+	position:relative;
+	top:1px;
+}
+
+.LinkBtn {
+	background-color: #DD99BA;
+	border-radius:7px;
+	border:3px solid #474747;
+	display:inline-block;
+	cursor:pointer;
+	color:#474747;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:12px 33px;
+	text-decoration:none;
+}
+.LinkBtn:hover {
+	background-color:#ffdff1;
+}
+.LinkBtn:active {
+	position:relative;
+	top:1px;
+}
