@@ -3,8 +3,14 @@
 	838383 -- medium gray */
 
 body {
-	background: #ffdff1; /*pink*/
+	background: #fdfdfd; /*white*/
 	text-align: left;
+}
+
+#header {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #f7729a;
+	font-size: 14pt;
 }
 
 #main {
@@ -77,19 +83,19 @@ p.disp {
 }
 
 .DirBtnBig {
-	background-color:#dbdbdb;
-	border-radius:21px;
-	border:3px solid #474747;
+	background-color:#ffffff; /*white*/
+	border-radius:8px;
+	border:1px solid #000000;
 	display:inline-block;
 	cursor:pointer;
-	color:#474747;
-	font-family:Arial;
-	font-size:22px;
-	padding:11px 32px;
+	color:#000000;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size:12pt;
+	padding:5px 16px;
 	text-decoration:none;
 }
 .DirBtnBig:hover {
-	background-color: #ffdff1;
+	background-color: #f7729a; /*frink*/
 }
 .DirBtnBig:active {
 	position:relative;
@@ -103,7 +109,7 @@ p.disp {
 	display:inline-block;
 	cursor:pointer;
 	color:#474747;
-	font-family:Arial;
+	font-family:Georgia, 'Times New Roman', Times, serif;;
 	font-size:16px;
 	padding:7px 20px;
 	text-decoration:none;
@@ -123,7 +129,7 @@ p.disp {
 	display:inline-block;
 	cursor:pointer;
 	color:#474747;
-	font-family:Arial;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size:18px;
 	font-weight:bold;
 	padding:12px 33px;
@@ -135,4 +141,8 @@ p.disp {
 .LinkBtn:active {
 	position:relative;
 	top:1px;
+}
+
+.right {
+	float: right;
 }
