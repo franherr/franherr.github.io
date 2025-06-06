@@ -1,148 +1,160 @@
-/*colors;
-	ffacdb -- darker pink 
-	838383 -- medium gray */
-
-body {
-	background: #fdfdfd; /*white*/
-	text-align: left;
-}
-
-#header {
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	color: #f7729a;
-	font-size: 14pt;
-}
-
-#main {
-	width: 1000px;
+#content-box {
+	width: 90%;
 	height: auto;
-	background: #dbdbdb; /* Light Gray*/
-	margin: 25px auto;
-	border: solid 4px #474747; /* Dark Gray*/
+	margin: auto;
 	padding: 10px;
 }
 
-h1 {
-	text-align: center;
-	font-family: "Georgia";
-	font: 24pt;
-	color: #474747; /* Dark Gray*/
+.container {
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: top;
+	margin: auto;
 }
 
-h2 {
-	text-align: center;
-	font-family: "Arial";
-	font: 20pt;
-	color: #474747;
+.container > * {
+	width: 50%;
 }
 
-hr {
-	height: 4px;
-	color: #474747; /* Dark Gray*/
+a {
+  color: #a53858;
 }
 
-p {
-	font-family: "Calibri";
-	font-size: 12pt;
-	text-align: left;
-	text-indent: 48px;
-	margin: 10px 30px 10px 30px;
+
+/*header and directory */
+#header {
+	color: #a53858;
 }
 
-p.large {
-	font-size: 16pt;
-	margin: 10px 60px 10px 60px;
-}
-
-p.emph {
-	font-style: italic;
-	font-size: 14pt
-}
-
-p.disp {
-	font-family: "Georgia";
-	font-style: italic;
-	font-size: 14pt;
-	text-align: center;
-	line-height: 150%;
-}
-
-#imageDis {
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  text-align: center;
-}
-#imageDis img {
-  vertical-align: middle;
-}
-
-.centering {
-	text-align: center;
+#directory {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20pt;
+	font-style: bold;
+	padding-left: 5%;
+	padding-right: 5%;
+	height: 50px;
 }
 
 .DirBtnBig {
-	background-color:#ffffff; /*white*/
 	border-radius:8px;
-	border:1px solid #000000;
+	border:1px solid;
 	display:inline-block;
+	color: #a53858;
 	cursor:pointer;
-	color:#000000;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size:12pt;
 	padding:5px 16px;
 	text-decoration:none;
 }
 .DirBtnBig:hover {
-	background-color: #f7729a; /*frink*/
+	background-color: #ffc7d8; /*frink*/
+	color: #a53858;
+	border: #a53858;
 }
 .DirBtnBig:active {
 	position:relative;
 	top:1px;
 }
 
-.DirBtnSmall {
-	background-color:#dbdbdb;
-	border-radius:21px;
-	border:2px solid #474747;
-	display:inline-block;
-	cursor:pointer;
-	color:#474747;
-	font-family:Georgia, 'Times New Roman', Times, serif;;
-	font-size:16px;
-	padding:7px 20px;
-	text-decoration:none;
-}
-.DirBtnSmall:hover {
-	background-color:#ffdff1;
-}
-.DirBtnSmall:active {
-	position:relative;
-	top:1px;
+.selected {
+	color: #ffc7d8;
+	background-color: #a53858;
+	border: #ffc7d8;
 }
 
-.LinkBtn {
-	background-color: #DD99BA;
-	border-radius:7px;
-	border:3px solid #474747;
-	display:inline-block;
-	cursor:pointer;
-	color:#474747;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size:18px;
-	font-weight:bold;
-	padding:12px 33px;
-	text-decoration:none;
+#header > * {
+	padding: 5px;
 }
-.LinkBtn:hover {
-	background-color:#ffdff1;
-}
-.LinkBtn:active {
-	position:relative;
-	top:1px;
+
+/*footer*/
+footer {
+    bottom: 0;
+    left: 0;
+	height: 80px;
+	font-size: 10pt;
+	padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .right {
 	float: right;
 }
+
+/*general image displays*/
+
+.imageDis {
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 10px;
+  width: 70%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.small {
+	width: 400px;
+	height: auto;
+}
+
+/* responsive gallery container */
+
+#gallery > * {
+	width: 20%;
+	position: relative;
+	display: inline-block;
+}
+
+.gallery-container > img {
+	width: 90%;
+	height: auto;
+}
+
+.tall > img {
+	height: auto;
+	width: 50%;
+} 
+
+.wide > img {
+	width: 100%;
+	height: auto;
+}
+
+.responsive-gallery-container > img {
+	width: 90%;
+	height: auto;
+	transition: all 0.3s ease-in-out;
+}
+
+.caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 12pt; /* Adjust the size of the text as needed */
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	text-align: center;
+	opacity: 0; /* Initially hide the caption */
+	transition: opacity 0.3s ease-in-out;
+  }
+
+
+  .responsive-gallery-container:hover img {
+	filter: brightness(50%) contrast(100%) grayscale(0); /* Fade to black (50% brightness) */
+  }
+  
+  .responsive-gallery-container:hover .caption {
+	opacity: 1; /* Show the caption on hover */
+  } 
