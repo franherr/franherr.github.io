@@ -47,14 +47,28 @@ a {
 	padding:5px 16px;
 	text-decoration:none;
 }
-.DirBtnBig:hover {
+
+.activated:hover {
 	background-color: #ffc7d8; /*frink*/
 	color: #a53858;
 	border: #a53858;
 }
-.DirBtnBig:active {
+
+.activated:active {
 	position:relative;
 	top:1px;
+}
+
+.DirBtnSmall {
+	border-radius:21px;
+	border:2px solid #a53858;
+	display:inline-block;
+	cursor:pointer;
+	color:#a53858;
+	font-family:Georgia, 'Times New Roman', Times, serif;;
+	font-size:10pt;
+	padding:5px 16px;
+	text-decoration:none;
 }
 
 .selected {
@@ -103,7 +117,7 @@ footer {
 }
 
 .small {
-	width: 400px;
+	width: 300px;
 	height: auto;
 }
 
