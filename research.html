@@ -4,26 +4,118 @@
 <head>
 	<title>Fran Herr</title>
 <link href="style.css" type="text/css" rel="stylesheet">	
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 </head>
 <body>
 <div id="header">
 	<h1 id="name"> Fran Herr </h1>
 <div id="directory">
-	<div class="right">
-		<a href="index.html" class="DirBtnBig">Home</a>
-		<a href="notes.html" class="DirBtnBig">Writing</a>
-		<a href="research.html" class="DirBtnBig">Research</a>
-		<a href="projects.html" class="DirBtnBig">Projects</a>
-		<!-- <a href="grapefruitgecko.html" class="DirBtnBig">YouTube</a> -->
+	<div>
+		<a href="index.html" class="DirBtnBig activated">Home</a>
+		<a href="research.html" class="DirBtnBig selected activated">Research</a> 
+		<a href="talks.html" class="DirBtnBig activated">Talks</a>
+		<a href="teaching.html" class="DirBtnBig activated">Teaching</a>
+		<a href="activities.html" class="DirBtnBig activated">Activities</a> 
 	</div>
+	<hr>
 </div>
 </div>
 	<div id="content-box">
-		<h1>Research</h1>
-		My research combines several different objects from topology, geometry, and dynamics. For an explanation of the background 
-		material on these objects, see my <a href="files/foliations-3-manifolds.pdf">topics proposal</a> writeup.
-		<h2>Foliations of 3-manifolds</h2>
-		<h2>Big mapping class groups</h2>
-		<p>Universal Circles</p>
+		<h1>Research and Writing</h1>
+		<h2>Papers</h2>
+		<ul>
+			<li><i><b>An explicit leafwise branched covering for a transverse pseudo-Anosov flow (draft).</b></i> (2026) <a href="files/pA-leafwise-draft.pdf">pdf.</a></li>
+			<p> <b>Abstract:</b> We construct a specific branched submersion for a 3-manifold with a taut 
+				codimension one foliation transverse to a pseudo-Anosov flow. This map is a leafwise branched 
+				covering for the foliation: the restriction to each leaf is a branched covering. Moreover, its 
+				critical locus is a set of closed orbits of the flow, containing all the singular orbits. The 
+				construction depends only on the pseudo-Anosov flow and is done via an associated veering 
+				triangulation. We also develop framework for branched submersions, homotopies through branched 
+				immersions, and taut cone fields. In the last section, we work out an explicit example for 
+				the figure eight knot complement.
+			</p>
+			<li><i><b>Curve Stitching and Dancing Planets.</b></i> (2024) <a href="files/curve-stitching.pdf">pdf.</a> and <a href="https://link.springer.com/article/10.1007/s00283-025-10474-2">published</a> in <i>The Mathematical Intelligencer.</i></li>
+			<p>
+				<b>Abstract:</b> Curve stitching is a classic educational activity where one constructs 
+				elegant curves from a family of straight lines. We perform curve stitching around a circle to 
+				make a <i>modular stitch graph</i>. Take <i><b>m</b></i> points equally spaced around a circle, choose an 
+				integer multiplier <i><b>a</b></i>, and draw a chord from point <i><b>p</b></i> to <b><i>a p</i> mod <i>m</i></b>
+				What design will appear as the envelope of these chords? We connect these discrete objects to a continuous-time 
+				dynamical system and apply a topological perspective to understand the answer to this question.
+			</p>
+		</ul>
+		<div class="container" id="gallery">
+			<div class="gallery-container"><img class="responsive" src="images/mmt2.png" alt="Some modular Multiplication Tables"></div>
+			<div class="gallery-container"><img class="responsive" src="images/rho-lambda.png" alt="two homotopies through branched coverings"></div>
+			<div class="gallery-container"><img class="responsive" src="images/pa-foliation.png" alt="Stable and unstable foliations for a pseudo Anosov flow"></div>
+			<div class="gallery-container" tall><img class="responsive" src="images/flow-graph.png" alt="three maximal rectanlges side-by-side"></div>			
+<!-- 					
+			<a class="image-link" target="_blank" href="https://arxiv.org/abs/2205.01796"><div class="gallery-container"><img class="responsive" src="images/matching-c5.png" alt="The Peterson graphs"><div class="caption">Iterated Jump Graphs</div></div></a>
+			<a class="image-link" target="_blank" href="files/modularMultiplication-dancingPlanets.pdf"><div class="gallery-container"><img class="responsive" src="images/mmt2.png" alt="Some modular Multiplication Tables"><div class="caption">Dancing Planets and Modular Multiplication</div></div></a>
+			<a class="image-link" target="_blank" href="https://arxiv.org/abs/2110.11302"><div class="gallery-container"><img class="responsive" src="images/mobius.png" alt="A Mobius loop made of triangles"><div class="caption">Buchsbaum matching complexes</div></div></a>
+			<a class="image-link" target="_blank" href="files/cellular-strings.pdf"><div class="gallery-container"><img class="responsive" src="images/polytope.jpg" alt="A cube with a cellular string"><div class="caption">Cellular Strings</div></div></a>
+ -->		</div>
+
+
+		<h2>Expository notes</h2>
+		<ul>
+			<li><a href="files/3-manifolds-notes.pdf"><i>3-Manifolds Notes</i></a> (2025) 
+				<p>These are class notes from a course on 3-manifolds taught by Danny Calegari and Benson Farb in Fall 2024.
+					There are still some comments and unfinished ideas. All mistakes are my own.
+				</p>
+			</li>
+			<li><a href="files/foliations-3-manifolds.pdf"><i>Foliating Three-Dimensional Manifolds by Surfaces</i></a> (2025) 
+				<p>This is my topics proposal for my PhD candidacy exam. It covers Riemann surfaces, mapping class groups,
+					and foliations on three-manifolds.
+				</p>
+			</li>
+			<li><a href="files/Thurston_Rational_maps.pdf"><i>Unpacking Thurston's Theorem for post-critically finite maps</i></a> (2024) 
+				<p>This is my final paper for Differential Topology at U Chicago. </p>
+			</li>
+			<li><a href="files/seifert_surfaces.pdf"><i>All knotted up</i></a> (2024)
+				<p>An exploration of the mathematics of designing crochet patterns for Seifert surfaces. This writeup was for the <i>Big Internet Math-Off</i> in 2024.
+				</p>
+			</li>
+			<li><a href="files/configurations_spaces.pdf"><i>(Con)figuring out spaces</i></a> (2024)
+				<p> An introduction to the configuration space of points using dancers on a stage as an example. This writeup was for the <i>Big Internet Math-Off</i> in 2024.
+					I discuss these same ideas in a <a target="_blank" href="https://www.youtube.com/watch?v=pSdeWTqz4yg">dance film</a>. 
+				</p>
+			</li>
+			<li><a href="files/mobius-transformations.pdf"><i>The Platonic Solids Strike Again!</i></a> (2020) 
+				<p>This was my final paper for my undergraduate complex analysis class. It covers Mobius transformations, some 
+					basic group theory, and the classification of finite 3-dimensional rotation groups.
+				</p>
+			</li>
+		</ul>
+		<div class="container" id="gallery">
+			<div class="gallery-container tall"><img class="responsive" src="images/Hyperelliptic.png" alt="the hyperelliptic involution on a genus 2 surface"></div>
+			<div class="gallery-container wide"><img class="responsive" src="images/degree3.jpg" alt="A degree 6 branched covering from the sphere to itself"></div>
+			<div class="gallery-container tall"><img class="responsive" src="images/MF.jpg" alt="a foliation of a compactified mapping torus"></div>
+			<div class="gallery-container tall"><img class="responsive" src="images/Whitehead2.png" alt="a once-punctured torus embedded in the whitehead link complement"></div>
+			<div class="gallery-container wide"><img class="responsive" src="images/Random-graph.png" alt="a combinatorial method to turn a graph into a link"></div>	
+		</div>
+
+		<h2>Undergraduate Research</h2>	
+		<ul>
+			<li><i>A characterization of two-dimensional Buchsbaum matching complexes.</i> (2023) Joint with Bennet Goeckner, Legrand Jones, Rowan Rowlands. <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v30i1p36">Published</a> in the Electric Journal of Combinatorics. <a href="https://arxiv.org/abs/2110.11302">arxiv.</a></li>
+			<li><i>Iterated Jump Graphs.</i> (2022) Joint with Legrand Jones. <a href="https://scholar.rose-hulman.edu/rhumj/vol23/iss2/7/">Published</a> in Rose-Hulman undergraduate journal. <a href="https://arxiv.org/abs/2205.01796">arxiv.</a></li>
+			<li><i>All cellular strings on polytopes at once.</i>(2022) Senior thesis. <a href="files/cellular-strings.pdf">print.</a></li>
+		</ul>
+		<div class="container" id="gallery">
+			<div class="gallery-container"><img class="responsive" src="images/complex.jpg" alt="a rainbow complex function"></div>
+			<div class="gallery-container"><img class="responsive" src="images/matching-c5.png" alt="The Peterson graphs"></div>
+			<div class="gallery-container"><img class="responsive" src="images/mobius.png" alt="A Mobius loop made of triangles"></div>
+			<div class="gallery-container"><img class="responsive" src="images/polytope.jpg" alt="A cube with a cellular string"></div>
+	<a class="image-link" target="_blank" href="files/mobius-transformations.pdf"></a>
+		</div>
+		  <!-- <div class="gallery">
+			<img class="responsive" src="images/Hyperelliptic.png" alt="the hyperelliptic involution on a genus 2 surface">
+			<img class="responsive" src="images/degree3.jpg" alt="A degree 6 branched covering from the sphere to itself">
+		 	<img class="responsive" src="images/MF.jpg" alt="a foliation of a compactified mapping torus">
+			<img class="responsive" src="images/Whitehead2.png" alt="a once-punctured torus embedded in the whitehead link complement">
+			<img class="responsive" src="images/Random-graph.png" alt="a combinatorial method to turn a graph into a link">
+		</div> -->
+	</div>
 </body>
+<footer>Last updated May 2026; Made by Fran Herr</footer>
 </html>
